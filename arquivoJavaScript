@@ -1,0 +1,32 @@
+function calculo(){
+    //pega o valor da seleção com o id DIA
+    var selection = document.getElementById("Dia").value;
+    //Converte o valor da string pega pelo selection em um numero inteiro
+    var selectedDay = parseInt(selection);
+
+    switch(selectedDay){
+        case 1 :
+            //Permite fazer alteração com o html
+            document.getElementById("Info").innerHTML ="Domingo vem do latim dies Solis, que significa dia do Sol.</br>Em muitas culturas, o domingo é associado ao Sol e é frequentemente considerado como o primeiro dia da semana em calendários ocidentais."; 
+        break;
+        case 2 :
+            document.getElementById("Info").innerHTML ="Segunda tem origem no latim dies Lunae, que significa dia da Lua.</br>Em várias culturas, a segunda-feira está associada à lua e à feminilidade.";
+        break;
+        case 3 :
+            document.getElementById("Info").innerHTML ="Terça-feira vem do latim dies Martis, que significa dia de Marte, o deus romano da guerra.</br>Em muitas línguas, a terça-feira é associada a Marte ou à guerra.";
+        break;
+        case 4 :
+            document.getElementById("Info").innerHTML ="Quarta-feira tem origem na mitologia nórdica, sendo associada ao deus Odin.</br>Em inglês, por exemplo, Wednesday deriva de Woden's day, em homenagem a Odin.";
+        break;
+        case 5 :
+            document.getElementById("Info").innerHTML ="Quinta-feira é derivada do nome latino dies Iovis, que significa dia de Júpiter, o deus romano dos céus e do trovão.</br>Em várias línguas europeias, a quinta-feira é nomeada em honra a Júpiter.";
+        break;
+        case 6 :
+            document.getElementById("Info").innerHTML ="Sexta-feira tem sua origem na palavra latina dies Veneris, que significa dia de Vênus, a deusa romana do amor e da beleza.</br>Muitas culturas veem a sexta-feira como um dia propício para o romance e atividades sociais.";
+        break;
+        case 7 :
+            document.getElementById("Info").innerHTML ="Sábado tem origem no hebraico Shabbat, que significa descanso ou cessação.</br>Em várias culturas, o sábado é considerado um dia sagrado e reservado para o descanso e a adoração";
+        break;
+    }
+
+}
